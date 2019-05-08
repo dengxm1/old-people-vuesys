@@ -1,0 +1,88 @@
+// 主体区域
+.main-container {
+    position: absolute;
+    top: 61px;
+    right: 0;
+    bottom: 0;
+    left: 218px;
+    background: #eff3f6;
+    padding-top: 28px;
+    transition: margin-left 0.28s;
+  }
+  .app-container {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .app-main {
+    height: 100%;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  .tags-view-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .tags-view-wrapper {
+      background: #f9f9f9;
+      height: 28px;
+      border-bottom: 1px solid #d8dce5;
+      .tags-view-item {
+        position: relative;
+        display: inline-block;
+        background: #fff;
+        height: 24px;
+        line-height: 24px;
+        margin: 4px 4px 0 0;
+        padding: 0 2px 0 8px;
+        overflow: hidden;
+        border: 1px solid #d8dce5;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        font-size: 13px;
+        color: #999;
+        &:first-of-type {
+          margin-left: 15px;
+        }
+        &.active {
+          background-color: #32373d;
+          color: #fff;
+          border-color: #32373d;
+          .el-icon-close {
+            color: #fff;
+          }
+        }
+        .el-icon-close {
+          margin: 2px 0 0 -2px;
+          padding: 3px;
+          border-radius: 50%;
+          vertical-align: top;
+          text-align: center;
+          color: #999;
+        }
+      }
+    }
+    .contextmenu {
+      position: fixed;
+      background: #fff;
+      margin: 0;
+      padding: 5px 0;
+      border-radius: 4px;
+      list-style-type: none;
+      font-size: 12px;
+      font-weight: 400;
+      color: #333;
+      box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+      li {
+        margin: 0;
+        padding: 7px 16px;
+        cursor: pointer;
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+}

@@ -1,0 +1,35 @@
+.sidebar-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #32373d;
+    width: 218px;
+    height: auto;  
+      img {
+        display: block;
+        margin-bottom: 2px;
+        height: 100px;
+        width: 210px;
+        padding-top: 20px;
+    }
+    .el-menu{
+      margin-top: 15px;
+      padding-left: 20px;
+     .el-icon-location{
+       color: rgb(134, 128, 128);
+     }
+    .top-title{
+      color: rgb(255, 255, 255);
+    }
+    .el-menu-item-group{
+      padding-left: 20px;
+    }
+    .el-submenu{
+      padding-left: 20px;
+      .el-menu-item{
+        padding: 0!important;
+      }
+    }
+    }
+  }
